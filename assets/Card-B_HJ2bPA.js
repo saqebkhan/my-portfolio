@@ -1,0 +1,1 @@
+import{n as e,t,u as n}from"./utils-CnfH08E9.js";var r=n();function i({children:n,className:i,delay:a=0}){return(0,r.jsx)(e.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{delay:a},className:t(`glass rounded-2xl overflow-hidden`,i),children:n})}export{i as t};
