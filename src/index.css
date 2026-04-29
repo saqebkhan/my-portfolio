@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Offset for sticky navbar */
+  }
+
+  body {
+    @apply bg-dark text-slate-400 font-sans antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-white font-bold tracking-tight;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-dark;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-accent rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-dark/80 backdrop-blur-md border border-white/10;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 lg:py-32;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark shadow-lg shadow-primary/20;
+  }
+
+  .btn-secondary {
+    @apply bg-dark-lighter text-white hover:bg-dark-accent border border-white/10;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400;
+  }
+}
