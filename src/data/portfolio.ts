@@ -9,7 +9,7 @@ export const portfolioData = {
     linkedin: "https://linkedin.com/in/saqebkhan",
     github: "https://github.com/saqebkhan",
     summary: "Senior Frontend Developer with over 5 years of experience building high-performance, scalable web applications. Expert in React.js and Vue.js, with a strong focus on micro-frontend architecture, performance optimization, and crafting premium user experiences.",
-    resumeUrl: "/saqeb_khan_resume.pdf"
+    resumeUrl: "Saqeb Khan Updated resume.pdf"
   },
   skills: [
     {
