@@ -46,7 +46,7 @@ export const portfolioData = {
         github: "#",
         demo: "#"
       },
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+      image: "assets/images/invoice-system.png"
     },
     {
       id: "cowmanager",
@@ -58,9 +58,9 @@ export const portfolioData = {
       features: ["Micro-frontend architecture", "Shared UI library", "CI/CD integration", "Vue 2 to 3 migration"],
       links: {
         github: "#",
-        demo: "#"
+        demo: "https://www.cowmanager.com"
       },
-      image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=800"
+      image: "assets/images/cowmanager.png"
     },
     {
       id: "souled-store",
@@ -69,12 +69,17 @@ export const portfolioData = {
       solution: "Developed an interactive 3D shoe customization engine using .glb models. Integrated CMS-driven feature toggles for dynamic control over customization options.",
       tech: ["Vue.js 2", "3D Modeling (.glb)", "Vuex", "Coralogix"],
       impact: "Increased user engagement by 35% on customization pages and streamlined feature deployment.",
-      features: ["Real-time 3D rendering", "Dynamic customization options", "Error monitoring integration", "Feature toggle system"],
+      features: [
+        "Interactive 3D shoe customization using .glb models",
+        "CMS-driven feature toggle system for dynamic control",
+        "Managed complex UI workflows with Vuex",
+        "Real-time error monitoring with Coralogix integration"
+      ],
       links: {
         github: "#",
-        demo: "#"
+        demo: "https://www.thesouledstore.com"
       },
-      image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800"
+      image: "assets/images/souled-store.png"
     },
     {
       id: "ag-grid-optimization",
@@ -83,12 +88,36 @@ export const portfolioData = {
       solution: "Implemented high-performance data tables using AG Grid with dynamic column configuration and optimized rendering logic.",
       tech: ["React", "AG Grid", "Performance Tuning"],
       impact: "Achieved 60fps scrolling on tables with 100k+ rows and improved initial data visualization speed by 50%.",
-      features: ["Dynamic column configuration", "Server-side pagination", "Complex data visualization", "Reusable table components"],
+      features: [
+        "High-performance data tables using AG Grid",
+        "Dynamic column configuration and optimized rendering",
+        "Improved data visualization and interaction speed",
+        "Reusable table components for scalability"
+      ],
       links: {
         github: "#",
         demo: "#"
       },
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+      image: "assets/images/xcelerate.png"
+    },
+    {
+      id: "insurance-platform",
+      title: "Insurance Platform (TATA AIG)",
+      problem: "Legacy insurance workflows were non-responsive and prone to data entry errors due to lack of validation.",
+      solution: "Developed a responsive UI using Vue.js and Vuetify. Built complex forms with robust validation logic to improve data accuracy and streamlined policy/audit workflows.",
+      tech: ["Vue.js", "Vuetify", "REST API"],
+      impact: "Improved data accuracy by 40% and enhanced user experience through structured UI logic.",
+      features: [
+        "Responsive UI development with Vuetify",
+        "Complex form building with advanced validation",
+        "Integration of backend APIs for policy and audit workflows",
+        "Structured UI logic for improved UX"
+      ],
+      links: {
+        github: "#",
+        demo: "#"
+      },
+      image: "assets/images/tata-aig.png"
     }
   ],
   experience: [
@@ -98,9 +127,11 @@ export const portfolioData = {
       period: "OCT 2024 - Present",
       description: "Leading frontend initiatives for major e-commerce platforms, focusing on performance and interactive features.",
       highlights: [
-        "Architected 3D customization features for high-traffic platforms.",
-        "Implemented CMS-driven dynamic feature control.",
-        "Optimized application state management using Vuex/Pinia."
+        "Developed scalable e-commerce features using Vue.js 2 with REST API integration.",
+        "Built interactive 3D shoe customization feature using .glb models to enhance user engagement.",
+        "Managed application state using Vuex for complex UI workflows.",
+        "Integrated Coralogix for real-time error monitoring and debugging.",
+        "Developed CMS-driven feature toggle system for dynamic feature control."
       ]
     },
     {
@@ -109,20 +140,48 @@ export const portfolioData = {
       period: "FEB 2023 - JUL 2024",
       description: "Specialized in micro-frontend architectures and large-scale migrations.",
       highlights: [
-        "Implemented Module Federation for scalable frontend growth.",
-        "Managed complex Vue 2 to Vue 3 migrations.",
-        "Established shared UI component libraries with Storybook."
+        "Collaborated across multiple teams including Client App, Shell App, and shared UI library.",
+        "Developed micro-frontend architecture using Module Federation.",
+        "Built reusable UI components using Vue 3 (Composition API) and Storybook.",
+        "Contributed to Vue 2 to Vue 3 migration improving maintainability.",
+        "Integrated CI/CD pipelines using Azure DevOps."
       ]
     },
     {
       company: "Clixlogix Technologies",
       role: "Associate Software Engineer",
-      period: "JUN 2022 - DEC 2024",
+      period: "JUN 2022 - DEC 2022",
       description: "Focused on real-time systems and heavy data handling.",
       highlights: [
-        "Developed WebSocket-based real-time notification systems.",
-        "Optimized rendering for massive invoice datasets.",
-        "Integrated complex REST APIs for financial workflows."
+        "Developed scalable invoice management system with real-time updates using WebSocket.",
+        "Integrated REST APIs for invoice creation, updates, and tracking.",
+        "Built comment system with CRUD operations, mentions, and notifications.",
+        "Improved UI responsiveness and reduced data load time.",
+        "Optimized rendering for handling large datasets efficiently."
+      ]
+    },
+    {
+      company: "Iorta Technologies",
+      role: "Software Engineer",
+      period: "MAR 2022 - JUN 2022",
+      description: "Developed enterprise insurance solutions with focus on accuracy and responsiveness.",
+      highlights: [
+        "Developed responsive UI using Vue.js and Vuetify.",
+        "Built complex forms with validation improving data accuracy.",
+        "Integrated backend APIs for policy and audit workflows.",
+        "Improved user experience through structured UI logic."
+      ]
+    },
+    {
+      company: "Wissen Infotech",
+      role: "Junior Software Engineer",
+      period: "SEP 2021 - MAR 2022",
+      description: "Specialized in high-performance data visualization and table components.",
+      highlights: [
+        "Built high-performance data tables using AG Grid handling large datasets.",
+        "Developed reusable table components for scalability.",
+        "Implemented dynamic column configuration and optimized rendering.",
+        "Improved data visualization and interaction speed."
       ]
     }
   ]
